@@ -16,22 +16,25 @@ const hamClick = () => {
 <style></style>
 
 <template>
-  <nav class="flex flex-col">
-    <div class="flex border">
-      <div class="flex xs:p-4">asd</div>
-      <div class="flex grow flex-row-reverse xs:hidden">
-        <div class="md:p-4 text-2xl">
+  <nav class="flex flex-col w-full">
+    <div class="flex border p-2">
+      <div class="flex justify-center items-center">asd</div>
+      <div class="flex flex-row-reverse px-4 grow invisible sm:visible">
+        <div class="text-2xl ml-4">
+          <RouterLink :to="{ name: 'home' }">About</RouterLink>
+        </div>
+        <div class="text-2xl ml-4">
           <RouterLink :to="{ name: 'all' }">National Heroes</RouterLink>
         </div>
-        <div class="md:p-4 text-2xl">
+        <div class="text-2xl mr-4">
           <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         </div>
       </div>
-      <div class="flex grow flex-row-reverse xs:p-2 md:hidden lg:hidden">
+      <div class="flex grow flex-row-reverse sm:hidden">
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
-          class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-black-900 dark:hover:bg-gray-300 dark:focus:ring-gray-600"
+          class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-black-900 dark:hover:bg-gray-300 dark:focus:ring-gray-600"
           aria-controls="navbar-hamburger"
           aria-expanded="false"
           @click="hamClick()"

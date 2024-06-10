@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col text-2xl font-bold mt-9">Manila</div>
+    <div class="flex flex-col text-2xl font-bold mt-9">Exploits in Manila</div>
     <div class="flex flex-col">
       <div class="text-gray-600 text-xl mt-2">
         Before entering the esteemed Ateneo Municipal de Manila, Jose Rizal was advised by his older
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col text-2xl font-bold mt-9">Europe</div>
+    <div class="flex flex-col text-2xl font-bold mt-9">Exploits in Europe</div>
     <div class="flex flex-col">
       <div class="text-gray-600 text-xl mt-2">
         After earning his Licentiate in Medicine at the prestigious Universidad Central de Madrid,
