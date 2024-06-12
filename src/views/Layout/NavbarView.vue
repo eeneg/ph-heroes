@@ -17,20 +17,23 @@ const hamClick = () => {
 
 <template>
   <nav class="flex flex-col w-full">
-    <div class="flex border p-2">
-      <div class="flex justify-center items-center">asd</div>
-      <div class="flex flex-row-reverse px-4 grow invisible sm:visible">
-        <div class="text-2xl ml-4">
-          <RouterLink :to="{ name: 'home' }">About</RouterLink>
-        </div>
-        <div class="text-2xl ml-4">
+    <div class="flex border-b p-2">
+      <!-- logo -->
+      <div class="sm:p-2 xs:p-1 p-2">Philippine Heroes</div>
+      <!-- collapse menu -->
+      <div class="grow flex space-x-9 justify-end">
+        <div class="text-2xl ml-4 max-md:hidden">
           <RouterLink :to="{ name: 'all' }">National Heroes</RouterLink>
         </div>
-        <div class="text-2xl mr-4">
+        <div class="text-2xl ml-4 max-md:hidden">
+          <RouterLink :to="{ name: 'about' }">About</RouterLink>
+        </div>
+        <div class="text-2xl mr-4 max-md:hidden">
           <RouterLink :to="{ name: 'home' }">Home</RouterLink>
         </div>
       </div>
-      <div class="flex grow flex-row-reverse sm:hidden">
+      <!-- hamburger -->
+      <div class="sm:hidden">
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
@@ -60,6 +63,14 @@ const hamClick = () => {
             :to="{ name: 'home' }"
             @click="hamClick"
             >Home
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink
+            class="block py-2 px-3 text-black-900 active:bg-gray-200"
+            :to="{ name: 'about' }"
+            @click="hamClick"
+            >About
           </RouterLink>
         </li>
         <li>
